@@ -1,0 +1,323 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #6a11cb, #2575fc);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+h1, p {
+    margin: 0 0 20px;
+}
+
+img {
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Welcome Screen */
+#welcome-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#welcome-screen button {
+    background: #fff;
+    color: #2575fc;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#welcome-screen button:hover {
+    background: #2575fc;
+    color: #fff;
+}
+
+#welcome-screen div i {
+    font-size: 24px;
+    margin: 10px;
+    transition: transform 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+#welcome-screen div i:hover {
+    transform: scale(1.2);
+    color: #00d4ff;
+}
+
+/* Logo Section */
+.logo-container {
+    justify-content: flex-start;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    z-index: 15;
+}
+
+.logo-container img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation Bar */
+nav {
+    background: rgba(0, 0, 0, 0.8);
+    position: sticky;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00d4ff;
+}
+
+nav ul li i {
+    font-size: 20px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+nav ul li i:hover {
+    color: #00d4ff;
+}
+
+/* Dynamic Content Sections */
+#content {
+    padding: 20px;
+}
+
+.page {
+    display: none;
+    text-align: center;
+}
+
+.page img {
+    max-width: 80%;
+    height: auto;
+    margin: 10px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 10px;
+}
+
+/* Sports Section */
+#sport {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    line-height: 1.5;   /* Adjusts the space between lines */
+    margin-bottom: 10px; /* Adds spacing between paragraphs */
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#sport img {
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    margin: 20px 0;    
+}
+
+/* article Section */
+#article {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    line-height: 1.5;   /* Adjusts the space between lines */
+    margin-bottom: 10px; /* Adds spacing between paragraphs */
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#article img {
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    margin: 20px 0;    
+}
+.page h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.step-box {
+    border: 2px solid #ddd;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.step-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.step-box h3 {
+    margin-top: 0;
+    color: #555;
+}
+
+.step-box p, .step-box ul {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+.step-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+
+/* Music Section */
+#music {
+    color: black;
+    text-align: center;
+    line-height: 1.5;   /* Adjusts the space between lines */
+    margin-bottom: 10px; /* Adds spacing between paragraphs */
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#music img {
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    margin: 20px 0;
+}
+
+/* Food Section */
+#food {
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    line-height: 1.5;   /* Adjusts the space between lines */
+    margin-bottom: 10px; /* Adds spacing between paragraphs */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+#food img {
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    margin: 20px 0;
+}
+
+/* Video Section */
+#video {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Make it cover most of the viewport height */
+    margin: 20px auto;
+}
+
+#video img {
+    width: 70%;
+    max-width: 700px;
+    border-radius: 15px;
+}
+
+/* Buttons */
+button {
+    background: #fff;
+    color: #2575fc;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #2575fc;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .page img {
+        max-width: 100%;
+    }
+}
+/* Fade In Animation for Sections */
+.page {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;  /* Apply the fadeIn animation */
+}
+
+/* Keyframe for the fade-in effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
